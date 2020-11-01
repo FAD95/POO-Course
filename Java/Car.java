@@ -1,9 +1,9 @@
 package Java;
 
 class Car {
-    Integer id;
-    String license;
-    Account driver;
+    private Integer id;
+    private String license;
+    private Account driver;
     private Integer passenger;
 
     public Car(String license, Account driver){
@@ -28,4 +28,30 @@ class Car {
             System.out.println("El auto debe tener 4 pasajeros");
         }
     }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public String getLicense() {
+        return license;
+    }
+
+    public void setLicense(String license) {
+        this.license = license;
+    }
+
+    public Account getDriver() {
+        return driver;
+    }
+
+    public void setDriver(Account driver) {
+        this.driver = driver;
+    }
+
+    
 }
