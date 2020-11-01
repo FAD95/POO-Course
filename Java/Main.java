@@ -5,15 +5,14 @@ package Java;
  */
 class Main {
     public static void main(String[] args) {
-        Car car = new Car("AMQ123", new Account("Fadith Escorcia", "123456789"));
+        UberX car = new UberX("AMQ123", new Account("Fadith Escorcia", "123456789"), "Chevrolet", "Spark");
         car.id=1;
-        car.passenger=4;
+        car.setPassenger(4);
         car.printDataCar();
 
-        Car car2 = new Car("QWE258", new Account("Camila Troncoso", "123456789"));
+        UberPool car2 = new UberPool("QWE258", new Account("Camila Troncoso", "123456789"),"Hyundai","Elantra");
         car2.id=2;
-        car2.license="QWE258";
-        car2.passenger=5;
+        car2.setPassenger(4);
         car2.printDataCar();
     }    
 }
